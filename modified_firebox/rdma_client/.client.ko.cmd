@@ -1,0 +1,1 @@
+cmd_/home/sos/disag-firebox/rdma_client/client.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sos/disag-firebox/rdma_client/client.ko /home/sos/disag-firebox/rdma_client/client.o /home/sos/disag-firebox/rdma_client/client.mod.o
