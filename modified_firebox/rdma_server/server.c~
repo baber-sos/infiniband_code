@@ -313,7 +313,7 @@ int main(void)
 {
     timer = time(NULL);
 
-    printf("%s\n", "this is my kingdom!!");
+    // printf("%s\n", "this is my kingdom!!");
     wait_for_tcp_connection();
     
     puts("Handshaking. Getting mem_size");
