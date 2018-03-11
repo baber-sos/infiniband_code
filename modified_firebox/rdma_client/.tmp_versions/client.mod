@@ -1,2 +1,2 @@
-/home/sos/disag-firebox/rdma_client/client.ko
-/home/sos/disag-firebox/rdma_client/client.o
+/home/nomi/infiniband_code/modified_firebox/rdma_client/client.ko
+/home/nomi/infiniband_code/modified_firebox/rdma_client/client.o
