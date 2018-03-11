@@ -1,8 +1,8 @@
-cmd_/home/sos/disag-firebox/rdma_client/client.o := gcc -Wp,-MD,/home/sos/disag-firebox/rdma_client/.client.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO -I/usr/src/ofa_kernel/default/include/  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(client)"  -D"KBUILD_MODNAME=KBUILD_STR(client)" -c -o /home/sos/disag-firebox/rdma_client/.tmp_client.o /home/sos/disag-firebox/rdma_client/client.c
+cmd_/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o := gcc -Wp,-MD,/home/cyclone/infiniband_code/modified_firebox/rdma_client/.client.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.8/include -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO -I/usr/src/ofa_kernel/default/include/  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(client)"  -D"KBUILD_MODNAME=KBUILD_STR(client)" -c -o /home/cyclone/infiniband_code/modified_firebox/rdma_client/.tmp_client.o /home/cyclone/infiniband_code/modified_firebox/rdma_client/client.c
 
-source_/home/sos/disag-firebox/rdma_client/client.o := /home/sos/disag-firebox/rdma_client/client.c
+source_/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o := /home/cyclone/infiniband_code/modified_firebox/rdma_client/client.c
 
-deps_/home/sos/disag-firebox/rdma_client/client.o := \
+deps_/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o := \
   include/linux/kernel.h \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/preempt/voluntary.h) \
@@ -12,7 +12,7 @@ deps_/home/sos/disag-firebox/rdma_client/client.o := \
     $(wildcard include/config/panic/timeout.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
@@ -1205,8 +1205,8 @@ deps_/home/sos/disag-firebox/rdma_client/client.o := \
   include/rdma/ib_sa.h \
   include/rdma/ib_mad.h \
   include/uapi/rdma/ib_user_mad.h \
-  /home/sos/disag-firebox/rdma_client/log.h \
+  /home/cyclone/infiniband_code/modified_firebox/rdma_client/log.h \
 
-/home/sos/disag-firebox/rdma_client/client.o: $(deps_/home/sos/disag-firebox/rdma_client/client.o)
+/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o: $(deps_/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o)
 
-$(deps_/home/sos/disag-firebox/rdma_client/client.o):
+$(deps_/home/cyclone/infiniband_code/modified_firebox/rdma_client/client.o):

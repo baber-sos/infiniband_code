@@ -157,7 +157,7 @@ void comp_handler_send(struct ib_cq* cq, void* cq_context)
 		    }
 	    }
     } while (ib_req_notify_cq(cq, IB_CQ_NEXT_COMP |
-			    IB_CQ_REPORT_MISSED_EVENTS) > 0);
+		-	    IB_CQ_REPORT_MISSED_EVENTS) > 0);
 }
 
 void comp_handler_recv(struct ib_cq* cq, void* cq_context)
@@ -552,11 +552,11 @@ int post_send_wr(void)
 void add_device(struct ib_device* dev)
 {
     struct ib_cq_init_attr cq_attr;
-
+    printk(KERN_INFO "gonna register a new device: %s!\n", dev->name);
     LOG_KERN(LOG_INFO, ("We got a new device! %d\n ", devices_seen));
 
-    if (!is_second_device())
-        return;
+    // if (!is_second_device())
+    //     return;
 
     // We care abou the second device
     // The first one is ethernet
@@ -634,7 +634,7 @@ static int __init client_module_init(void)
 
     ib_register_client(&my_client);
 
-    while(1);
+    // while(1);
     return 0;
 }
 
